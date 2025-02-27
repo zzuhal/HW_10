@@ -1,0 +1,24 @@
+    1  git config --global user.name "zzuhal"
+    2  git config --global user.email "skrzhl@gmail.com"
+    3  git config --global --list
+    4  git clone https://github.com/zzuhal/HW_10.git
+    5  cd HW_10
+    6  ls
+    7  touch text_ignore.txt
+    8  git add .
+    9  git commit -m "text_ignore.txt dosyasını .gitignore'a ekledim."
+   10  touch main_test.txt
+   11  git add . 
+   12  git commit -m "boş main_test.txt dosyasını ekledim."
+   13  git branch develop
+   14  git checkout develop
+   15  touch delevop_test.txt
+   16  git add .
+   17  git commit -m "develop_test.txt dosyasını ekledim."
+   18  git status
+   19  git add . 
+   20  git commit -m "develop_test.txt dosyasında değişiklikler yapıldı."
+   21  git checkout main
+   22  git merge develop
+   23  git log
+   24  history > command_list.csv
